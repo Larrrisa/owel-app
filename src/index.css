@@ -9,7 +9,7 @@ body {
   background-size: cover;
 }
 
-.owel {
+.owl {
   animation: moving 4s forwards linear;
   position: fixed;
   bottom: -15rem;
@@ -37,6 +37,18 @@ body {
   transform: rotate(-30deg);
 }
 
+.left__ear::after {
+  content: "";
+  display: block;
+  background-color: rgb(235, 230, 161);
+  height: 0.8rem;
+  width: 0.3rem;
+  position: relative;
+  top: 2.5rem;
+  left: 1.7rem;
+  transform: rotate(20deg);
+}
+
 .right__ear {
   background-color: rgb(123, 202, 238);
   height: 4rem;
@@ -48,7 +60,9 @@ body {
   transform: scale(-1, 1) rotate(-30deg);
 }
 
-.ylw-part {
+.right__ear::after {
+  content: "";
+  display: block;
   background-color: rgb(235, 230, 161);
   height: 0.8rem;
   width: 0.3rem;
@@ -75,30 +89,22 @@ body {
   left: 0.5rem;
 }
 
-.left__eye__iris {
-  background-color: black;
-  border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
-  position: relative;
-  right: -1.8rem;
-  bottom: -1.8rem;
-}
-
-.left__eye__iris:hover {
-  position: relative;
-  right: -1.5rem;
-  bottom: -1.5rem;
-}
-
-.left__eye__iris__pupil {
-  background-color: white;
+.left__eye:after {
+  content: "";
+  display: block;
+  border: 1.8rem solid black;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
   position: relative;
-  right: -1.2rem;
-  bottom: -1.2rem;
+  right: -1rem;
+  bottom: -1rem;
+}
+
+.left__eye:hover:after {
+  position: relative;
+  right: -0.8rem;
+  bottom: -0.8rem;
 }
 
 .right__eye {
@@ -111,31 +117,22 @@ body {
   bottom: 6rem;
   left: 7rem;
 }
-
-.right__eye__iris {
-  background-color: black;
-  border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
-  position: relative;
-  right: -1.2rem;
-  bottom: -1.2rem;
-}
-
-.right__eye__iris:hover {
-  position: relative;
-  right: -0.8rem;
-  bottom: -0.8rem;
-}
-
-.right__eye__iris__pupil {
-  background-color: white;
+.right__eye::after {
+  content: "";
+  display: block;
+  border: 1.8rem solid black;
   border-radius: 50%;
   height: 1rem;
   width: 1rem;
   position: relative;
-  right: -1.2rem;
-  bottom: -1.2rem;
+  right: -1rem;
+  bottom: -1rem;
+}
+
+.right__eye:hover:after {
+  position: relative;
+  right: -0.8rem;
+  bottom: -0.8rem;
 }
 
 .nose {
@@ -166,64 +163,19 @@ body {
   z-index: 1;
 }
 
-.belly__button-1 {
+.belly:after {
+  content: "";
+  display: block;
   background-color: rgb(235, 230, 161);
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
   position: relative;
   left: 2rem;
-  bottom: -8rem;
-}
-
-.belly__button-2 {
-  background-color: rgb(235, 230, 161);
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  position: relative;
-  left: 4rem;
-  bottom: -6.8rem;
-}
-
-.belly__button-3 {
-  background-color: rgb(235, 230, 161);
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  position: relative;
-  left: 6rem;
-  bottom: -5.8rem;
-}
-
-.belly__button-4 {
-  background-color: rgb(235, 230, 161);
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  position: relative;
-  left: 8rem;
-  bottom: -5rem;
-}
-
-.belly__button-5 {
-  background-color: rgb(235, 230, 161);
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  position: relative;
-  left: 4rem;
-  bottom: -7rem;
-}
-
-.belly__button-6 {
-  background-color: rgb(235, 230, 161);
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  position: relative;
-  left: 6rem;
-  bottom: -6rem;
+  bottom: -9rem;
+  box-shadow: 2rem 0rem rgb(235, 230, 161), 4.5rem 0rem rgb(235, 230, 161),
+    6.5rem 0rem rgb(235, 230, 161), 2rem 2.5rem rgb(235, 230, 161),
+    4.5rem 2.5rem rgb(235, 230, 161);
 }
 
 .left__wing {
@@ -256,32 +208,16 @@ body {
   animation-iteration-count: 4;
 }
 
-.left__foot__finger-1 {
+.left__foot:after {
+  content: "";
+  display: block;
   background-color: rgb(68, 47, 47);
   border-radius: 50%;
   height: 2rem;
   width: 1rem;
   position: relative;
   transform: rotate(10deg);
-}
-.left__foot__finger-2 {
-  background-color: rgb(68, 47, 47);
-  border-radius: 50%;
-  height: 2rem;
-  width: 1rem;
-  position: relative;
-  left: 0.5rem;
-  bottom: 2rem;
-}
-.left__foot__finger-3 {
-  background-color: rgb(68, 47, 47);
-  border-radius: 50%;
-  height: 2rem;
-  width: 1rem;
-  position: relative;
-  left: 1rem;
-  bottom: 4rem;
-  transform: rotate(-10deg);
+  box-shadow: 0.8rem 0.2rem rgb(68, 47, 47), 1.5rem 0.1rem rgb(68, 47, 47);
 }
 
 .right__foot {
@@ -292,33 +228,18 @@ body {
   animation-iteration-count: 4;
 }
 
-.right__foot__finger-1 {
+.right__foot:after {
+  content: "";
+  display: block;
   background-color: rgb(68, 47, 47);
   border-radius: 50%;
   height: 2rem;
   width: 1rem;
   position: relative;
-  left: -0.3rem;
-  bottom: -0.3rem;
+  left: -0.5rem;
+  bottom: -4.3rem;
   transform: rotate(10deg);
-}
-.right__foot__finger-2 {
-  background-color: rgb(68, 47, 47);
-  border-radius: 50%;
-  height: 2rem;
-  width: 1rem;
-  position: relative;
-  left: 0.5rem;
-  bottom: 2rem;
-}
-.right__foot__finger-3 {
-  background-color: rgb(68, 47, 47);
-  border-radius: 50%;
-  height: 2rem;
-  width: 1rem;
-  position: relative;
-  left: 1rem;
-  bottom: 4rem;
+  box-shadow: 0.8rem -0.5rem rgb(68, 47, 47), 1.5rem -0.6rem rgb(68, 47, 47);
 }
 
 @keyframes moving {
@@ -405,12 +326,5 @@ body {
     position: relative;
     right: -10rem;
     top: -7.5rem;
-  }
-}
-
-@media (max-width: 1400px) {
-  .owel {
-    position: fixed;
-    top: -1rem;
   }
 }
